@@ -1,0 +1,393 @@
+label #bars,
+label #cancel {
+    font-size: 24px;
+    color: #060A24;
+    float: right;
+    margin-right: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*ESTILOS ADAPTABLES A TABLET A PARTIR DE 800px*/
+
+@media (max-width: 800px) {
+
+    /*MENU RESPONSIVE NAVBAR HAMBURGER*/
+
+    nav {
+        background-color: white;
+        padding: 22px 0 22px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .logo img {
+        width: 24px;
+        height: 24px;
+        float: left;
+        margin-left: 16px; 
+    }
+
+    label #bars {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 224px;
+        background-color: #0000EC;
+        padding-left: 16px;
+        top: 68px;
+        left: -110%;
+        text-align: left;
+        transition: all .5s;
+    }
+
+    .menu li {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 28px;
+        }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    #check:checked ~ label #bars {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+
+
+    /*ESTILO ENCABEZADO*/
+
+    .encabezadohijo {
+        max-width: 100%;
+        height: 90%;
+        position: absolute;
+        margin-left: 30px;
+        margin-top: 29px;
+    }
+
+    .helloword {
+        display: none;
+    }
+
+    .helloword2 {
+        display: block;
+        font-size: 54px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+
+    .parrafo1 {
+        width: 100%;
+        font-family: 'IBM Plex Mono-Medium', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        }
+
+    .conocemas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-decoration: none;
+        padding: 16px 59px 16px 59px;
+        background-color: #00F3BB;
+        font-family: 'IBM Plex Mono-Medium', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px;
+        width: 50%;
+        height: 26px;
+    }
+
+     /*ESTILOS EPISODIOS*/
+
+    .epicont {
+        position: relative;
+        top: 130px;
+    }
+
+    .embed-grid {
+        display: none;
+    }
+  
+    .embed-resp {
+        width: 100%;
+        height: 536px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .i-embed1 {
+        width: 298px;
+        height: 225px;
+        border-radius: 5px;
+        flex: none;
+        margin: 4px 9px;
+        border: 0px;                    //frameborder attribute
+        background-color: transparent;  //allowtransparency
+     }
+    
+
+    .card {
+        margin: 20px 0;
+        }
+
+    
+    /*ESTILOS NOSOTROS*/
+
+
+    .secnosotros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .phone {
+        max-width: 50%;
+        margin: -130px 20% 0 20%;
+        float: none;
+    }
+
+    .textnos {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*ESTILOS INVITADOS*/
+
+    .titinvitados {
+        margin: 64px 20% 0 20%;
+    }
+
+
+    /*ESTILOS TOPICOS*/
+
+    .tit-topico {
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        margin: 28px 20% 0 20%;
+    }
+
+    .cont-icon {
+        margin-top: 24px;
+    }
+
+    /*ESTILOS FOOTER*/
+
+    .social{
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .footer-p {
+        float: none;
+        text-align: center;
+        margin: 0 0 16px 0;
+    }
+
+}
+
+/*ESTILOS ADAPTABLES A MOVIL A PARTIR DE 400px*/
+
+@media (max-width: 400px) {
+
+    /*ESTILOS ENCABEZADO*/
+
+    .encabezado{
+        height: 310px;
+    }
+
+    .enca-skew {
+        transform: skewY(-6deg) translateY(10px);
+        }
+
+    .encabezadohijo {
+        margin:29px 0 0 0;
+    }
+
+    .helloword2 {
+        width: 80%;
+        display: block;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+        margin-top: -20px;
+    }
+
+    .parrafo1 {
+        width: 280px;
+        font-size: 14px;
+        margin: 0 16px;
+        }
+
+    .conocemas {
+        margin-top: 70px;
+        padding: 13px 20%;
+        }
+
+    /*ESTILOS EPISODIOS*/
+
+    .episodios {
+        height: 1204px;
+    }
+
+    .epicont {
+        top: 64px;
+    }
+
+    .epih1 {
+        margin-left: 16px;
+        font-family:'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        margin-bottom: 21px;
+    }
+
+    .embed-resp {
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    .i-embed1 {
+        width: 298px;
+        height: 225px;
+        border-radius: 5px;
+        flex: none;
+        margin: 4px 9px;
+        border: 0px;                    //frameborder attribute
+        background-color: transparent;  //allowtransparency
+    }
+
+    /*ESTILOS NOSOTROS*/
+
+    .nos-skew {
+        transform: skewY(-6deg) translateY(-36px);
+    }
+
+    .phone {
+        max-width: 100%;
+        margin-top: 48px;
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+    }
+
+    .textnos {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nosh1 {
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        margin: 27px 16px 8px 16px;
+    }
+
+    .pnos {
+        font-size: 14px;
+        margin: 14px 16px;
+    }
+
+    /*ESTILOS INVITADOS*/
+
+    .titinvitados {
+        margin: 64px 16px 14px 16px;
+        font-size: 36px;
+    }
+
+    .cont-galery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    /*ESTILOS TOPICOS*/
+
+    .tit-topico {
+        margin: 48px 16px 0 16px;
+        font-size: 36px;
+    }
+
+    .card-skew {
+        transform: skewY(-6deg) translateY(-200px);
+    }
+
+    /*ESTILOS NOVEDADES*/
+
+    .novedades {
+        height: 400px;
+    }
+
+    .container-novedades h1 {
+        font-size: 36px;
+        margin: 64px 0 52px;
+    }
+
+    .btn-novedades {
+        display: none;
+    }
+
+    .btn-cel {
+        position: relative;
+        top: 303px;
+        display: block;
+        padding: 13px 12%;
+        margin: 0 6%;
+        text-decoration: none;
+        background-color: #00F3BB;
+        font-family: 'IBM Plex Mono-Medium', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px;
+
+        &:hover {
+            margin: 0 3%;
+            font-size: 16px;
+            -webkit-transition: all 200ms ease; 
+    }
+    }
+}
+
+/*AQUI NO VA NADA!!!!!!!*/

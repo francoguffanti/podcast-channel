@@ -1,0 +1,647 @@
+/*Armado de estilo del NAVEGADOR*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 90px; }
+  *::selection {
+    background: #00F3BB;
+    color: white; }
+
+nav {
+  display: inline-block;
+  background-color: white;
+  padding: 22px 0 22px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-left: 100px; }
+
+.menu {
+  float: right;
+  padding: 3px;
+  margin-right: 100px; }
+
+.menu a {
+  text-decoration: none;
+  color: #060A24;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px; }
+  .menu a:hover {
+    font-size: 16px;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    text-decoration: line-through;
+    color: #00F3BB;
+    letter-spacing: 0;
+    line-height: 28px;
+    transition: all 0.3s ease; }
+  .menu a:active {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: rgba(6, 10, 36, 0.56);
+    letter-spacing: 0;
+    line-height: 28px; }
+
+.menu li {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-right: 48px;
+  list-style: none; }
+
+/*ESTILOS ENCABEZADO*/
+.encabezado {
+  position: relative;
+  width: 100%;
+  height: 369px;
+  padding-top: 90px;
+  background-color: #fff;
+  z-index: 1; }
+
+.enca-skew {
+  position: absolute;
+  width: 100%;
+  height: 315px;
+  transform-origin: top right;
+  transform: skewY(-6deg) translateY(57px);
+  background-color: #fff; }
+
+.encabezadohijo {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 120px; }
+
+.helloword {
+  font-size: 64px;
+  color: #060A24;
+  letter-spacing: 0;
+  display: inline-block; }
+  .helloword::after {
+    content: ".";
+    color: #0000EC; }
+
+.helloword2 {
+  display: none; }
+
+.parrafo1 {
+  width: 628px;
+  height: 48px;
+  font-family: 'IBM Plex Mono-Medium', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 24px; }
+
+.conocemas {
+  position: relative;
+  top: 72px;
+  text-decoration: none;
+  padding: 16px 59px 16px 59px;
+  background-color: #00F3BB;
+  font-family: 'IBM Plex Mono-Medium', monospace;
+  font-size: 18px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px; }
+
+.conocemas:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
+  transition: all .2s; }
+
+/*ESTILOS EPISODIOS*/
+.episodios {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  width: 100%;
+  height: 1100px;
+  position: relative; }
+
+.epicont {
+  position: relative;
+  top: 210px; }
+
+.epih1 {
+  margin-left: 200px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 0; }
+
+.embed-grid {
+  border-radius: 5px;
+  max-width: 100%;
+  margin: auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.i-embed {
+  width: 548px;
+  height: 232px;
+  border-radius: 5px;
+  flex: none;
+  margin: 36px 36px;
+  border: 0px;
+  background-color: transparent; }
+
+.embed-resp {
+  display: none; }
+
+/*ESTILOS NOSOTROS*/
+.secnosotros {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  margin-top: -350px; }
+
+.nos-skew {
+  width: 100%;
+  height: 200px;
+  transform-origin: top right;
+  transform: skewY(-6deg) translateY(-170px);
+  background-color: #fff; }
+
+.phone {
+  max-width: 457.6px;
+  max-height: 660px;
+  margin-top: -20px;
+  margin-left: 200px;
+  float: left; }
+
+.textnos {
+  max-width: 464px;
+  float: right;
+  margin-top: 200px;
+  margin-right: 300px; }
+
+.nosh1 {
+  font-size: 48px;
+  color: #060A24;
+  letter-spacing: 0; }
+
+.pnos {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 24px; }
+
+/*ESTILOS INVITADOS*/
+.invitados {
+  display: block;
+  max-width: 100%; }
+
+.titinvitados {
+  font-size: 48px;
+  color: #060A24;
+  letter-spacing: 0;
+  margin-top: 64px;
+  margin-left: 200px; }
+
+.cont-galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  width: 100%;
+  margin: auto;
+  padding: 36px 0; }
+
+.cont-galery img {
+  width: 100%; }
+
+/*ESTILOS TOPICOS*/
+.contcard {
+  position: relative;
+  background-color: #fff;
+  z-index: 1; }
+
+.skew {
+  max-width: 100%;
+  height: 50%; }
+
+.tit-topico {
+  font-size: 48px;
+  color: #060A24;
+  letter-spacing: 0;
+  margin-top: 28px;
+  margin-left: 200px; }
+
+.cont-icon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 56px 0 66px 0; }
+
+.cont-icon img {
+  padding: 0 78px; }
+
+.cont-icon h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  width: 220px;
+  margin-top: 16px;
+  padding: 0 20px; }
+
+/*ESTILOS NOVEDADES*/
+.novedades {
+  margin-top: -87px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  width: 100%;
+  height: 750px;
+  position: relative; }
+
+.card-skew {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  transform-origin: top right;
+  transform: skewY(-6deg) translateY(-150px);
+  background-color: #fff; }
+
+.container-novedades {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.container-novedades h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 100px 0 52px; }
+
+.btn-cel {
+  display: none; }
+
+.btn-novedades {
+  text-decoration: none;
+  padding: 16px 59px 16px 59px;
+  background-color: #00F3BB;
+  font-family: 'IBM Plex Mono-Medium', monospace;
+  font-size: 18px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px; }
+  .btn-novedades:hover {
+    padding: 20px 61px 20px 61px;
+    font-size: 20px;
+    -webkit-transition: all 200ms ease; }
+
+/*ESTILOS FOOTER*/
+footer {
+  margin: 0;
+  padding: 0; }
+
+.footer-hijo {
+  display: inline-block;
+  background-color: white;
+  padding: 29px 0 22px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+
+.social {
+  float: right;
+  margin-right: 88px; }
+
+.footer-p {
+  float: left;
+  margin-left: 100px; }
+
+.social i {
+  padding: 0 18px;
+  font-size: 18px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 28px; }
+
+label #bars,
+label #cancel {
+  font-size: 24px;
+  color: #060A24;
+  float: right;
+  margin-right: 16px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+/*ESTILOS ADAPTABLES A TABLET A PARTIR DE 800px*/
+@media (max-width: 800px) {
+  /*MENU RESPONSIVE NAVBAR HAMBURGER*/
+  nav {
+    background-color: white;
+    padding: 22px 0 22px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2; }
+
+  .logo img {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-left: 16px; }
+
+  label #bars {
+    display: block; }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 224px;
+    background-color: #0000EC;
+    padding-left: 16px;
+    top: 68px;
+    left: -110%;
+    text-align: left;
+    transition: all .5s; }
+
+  .menu li {
+    display: block;
+    padding: 12px 0; }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px; }
+
+  #check:checked ~ .menu {
+    left: 0; }
+
+  #check:checked ~ label #bars {
+    display: none; }
+
+  #check:checked ~ label #cancel {
+    display: block; }
+
+  /*ESTILO ENCABEZADO*/
+  .encabezadohijo {
+    max-width: 100%;
+    height: 90%;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 29px; }
+
+  .helloword {
+    display: none; }
+
+  .helloword2 {
+    display: block;
+    font-size: 54px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 20px; }
+
+  .parrafo1 {
+    width: 100%;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px; }
+
+  .conocemas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    padding: 16px 59px 16px 59px;
+    background-color: #00F3BB;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    width: 50%;
+    height: 26px; }
+
+  /*ESTILOS EPISODIOS*/
+  .epicont {
+    position: relative;
+    top: 130px; }
+
+  .embed-grid {
+    display: none; }
+
+  .embed-resp {
+    width: 100%;
+    height: 536px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .i-embed1 {
+    width: 298px;
+    height: 225px;
+    border-radius: 5px;
+    flex: none;
+    margin: 4px 9px;
+    border: 0px;
+    background-color: transparent; }
+
+  .card {
+    margin: 20px 0; }
+
+  /*ESTILOS NOSOTROS*/
+  .secnosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .phone {
+    max-width: 50%;
+    margin: -130px 20% 0 20%;
+    float: none; }
+
+  .textnos {
+    float: none;
+    width: 70%;
+    margin: 0 auto; }
+
+  /*ESTILOS INVITADOS*/
+  .titinvitados {
+    margin: 64px 20% 0 20%; }
+
+  /*ESTILOS TOPICOS*/
+  .tit-topico {
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    margin: 28px 20% 0 20%; }
+
+  .cont-icon {
+    margin-top: 24px; }
+
+  /*ESTILOS FOOTER*/
+  .social {
+    float: none;
+    text-align: center;
+    margin: 0; }
+
+  .footer-p {
+    float: none;
+    text-align: center;
+    margin: 0 0 16px 0; } }
+/*ESTILOS ADAPTABLES A MOVIL A PARTIR DE 400px*/
+@media (max-width: 400px) {
+  /*ESTILOS ENCABEZADO*/
+  .encabezado {
+    height: 310px; }
+
+  .enca-skew {
+    transform: skewY(-6deg) translateY(10px); }
+
+  .encabezadohijo {
+    margin: 29px 0 0 0; }
+
+  .helloword2 {
+    width: 80%;
+    display: block;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-top: -20px; }
+
+  .parrafo1 {
+    width: 280px;
+    font-size: 14px;
+    margin: 0 16px; }
+
+  .conocemas {
+    margin-top: 70px;
+    padding: 13px 20%; }
+
+  /*ESTILOS EPISODIOS*/
+  .episodios {
+    height: 1204px; }
+
+  .epicont {
+    top: 64px; }
+
+  .epih1 {
+    margin-left: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 21px; }
+
+  .embed-resp {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: auto; }
+
+  .i-embed1 {
+    width: 298px;
+    height: 225px;
+    border-radius: 5px;
+    flex: none;
+    margin: 4px 9px;
+    border: 0px;
+    background-color: transparent; }
+
+  /*ESTILOS NOSOTROS*/
+  .nos-skew {
+    transform: skewY(-6deg) translateY(-36px); }
+
+  .phone {
+    max-width: 100%;
+    margin-top: 48px;
+    margin-left: 0;
+    margin-right: 0;
+    float: none; }
+
+  .textnos {
+    float: none;
+    margin: 0 auto;
+    width: 100%; }
+
+  .nosh1 {
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    margin: 27px 16px 8px 16px; }
+
+  .pnos {
+    font-size: 14px;
+    margin: 14px 16px; }
+
+  /*ESTILOS INVITADOS*/
+  .titinvitados {
+    margin: 64px 16px 14px 16px;
+    font-size: 36px; }
+
+  .cont-galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    margin: auto;
+    padding: 0; }
+
+  /*ESTILOS TOPICOS*/
+  .tit-topico {
+    margin: 48px 16px 0 16px;
+    font-size: 36px; }
+
+  .card-skew {
+    transform: skewY(-6deg) translateY(-200px); }
+
+  /*ESTILOS NOVEDADES*/
+  .novedades {
+    height: 400px; }
+
+  .container-novedades h1 {
+    font-size: 36px;
+    margin: 64px 0 52px; }
+
+  .btn-novedades {
+    display: none; }
+
+  .btn-cel {
+    position: relative;
+    top: 303px;
+    display: block;
+    padding: 13px 12%;
+    margin: 0 6%;
+    text-decoration: none;
+    background-color: #00F3BB;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px; }
+    .btn-cel:hover {
+      margin: 0 3%;
+      font-size: 16px;
+      -webkit-transition: all 200ms ease; } }
+/*AQUI NO VA NADA!!!!!!!*/
+
+/*# sourceMappingURL=styles.css.map */
